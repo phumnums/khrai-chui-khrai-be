@@ -15,7 +15,7 @@ func main() {
 	app := fiber.New()
 
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: []string{"https://khrai-chui-khrai-fe.vercel.app/"},
+		AllowOrigins: []string{"https://khrai-chui-khrai-fe.vercel.app"},
 	}))
 
 	app.Get("/", func(c fiber.Ctx) error {
