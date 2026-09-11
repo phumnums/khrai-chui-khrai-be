@@ -3,6 +3,7 @@ package main
 import (
 	"khrai-chui-khrai/internal/calculator"
 	"khrai-chui-khrai/internal/domain"
+	"log"
 	"net/http"
 	"os"
 
@@ -26,6 +27,10 @@ func main() {
 	if port == "" {
 		port = "3000"
 	}
+
+	log.Printf("Server starting on port %s", port)
+
+	log.Fatal(app.Listen(":" + port))
 }
 
 func calculate(c fiber.Ctx) error {
