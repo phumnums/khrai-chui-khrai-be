@@ -3,8 +3,8 @@ package main
 import (
 	"khrai-chui-khrai/internal/calculator"
 	"khrai-chui-khrai/internal/domain"
-	"log"
 	"net/http"
+	"os"
 
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/middleware/cors"
@@ -22,7 +22,10 @@ func main() {
 	})
 	app.Post("api/v1/calculate", calculate)
 
-	log.Fatal(app.Listen(":3000"))
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3000"
+	}
 }
 
 func calculate(c fiber.Ctx) error {
