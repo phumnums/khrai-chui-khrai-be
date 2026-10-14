@@ -77,21 +77,6 @@ The application uses the `PORT` environment variable when provided.
 
 ## API Reference
 
-### Health Check
-
-Check whether the backend is running.
-
-**Endpoint**
-
-```http
-GET /
-```
-
-**Response — `200 OK`**
-
-```text
-Hello, World!
-```
 
 ### Calculate Payment Shares
 
