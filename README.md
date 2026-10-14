@@ -236,12 +236,6 @@ sum(order_items[].purchased_amount) = total_amount
 
 The backend is deployed on Render.
 
-**Base URL**
-
-```text
-https://khrai-chui-khrai-be.onrender.com
-```
-
 **Calculate Endpoint**
 
 ```http
