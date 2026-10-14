@@ -2,6 +2,8 @@
 
 Backend API for **Khrai Chui Khrai**, a web application that helps people calculate how much each person should pay back when sharing purchases through the Thai government subsidy program.
 
+Try the live application: [Khrai Chui Khrai](https://khrai-chui-khrai-fe.vercel.app/)
+
 ## Overview
 
 The Thai government subsidy program covers 60% of eligible expenses, while the buyer pays the remaining 40%.
