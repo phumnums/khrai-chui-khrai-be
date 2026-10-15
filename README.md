@@ -234,3 +234,7 @@ The backend allows requests from the configured frontend origin:
 ```text
 https://khrai-chui-khrai-fe.vercel.app
 ```
+
+## License
+
+See the repository's LICENSE file if a license has been added.
